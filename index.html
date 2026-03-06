@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Studio</title>
+    <script>
+      // Global error handler to catch and display errors that cause blank screens
+      window.onerror = function(message, source, lineno, colno, error) {
+        const root = document.getElementById('root');
+        if (root && root.innerHTML === '') {
+          root.innerHTML = `
+            <div style="padding: 20px; color: #ef4444; font-family: sans-serif;">
+              <h1 style="font-size: 20px;">Application Error</h1>
+              <p style="font-size: 14px;">${message}</p>
+              <pre style="font-size: 12px; background: #fee2e2; padding: 10px; border-radius: 8px; overflow: auto;">${error ? error.stack : 'No stack trace available'}</pre>
+              <p style="font-size: 12px; color: #6b7280;">Check the browser console for more details.</p>
+            </div>
+          `;
+        }
+      };
+      window.onunhandledrejection = function(event) {
+        console.error('Unhandled promise rejection:', event.reason);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
