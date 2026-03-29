@@ -783,7 +783,7 @@ Ensure the improvedPrompt is formatted with clear headings and bullet points for
               Created by <span className="text-brand-600 dark:text-brand-400 font-bold">Sam Sarvesh</span>
             </p>
             <p className="text-[10px] text-gray-400 dark:text-gray-500 font-light">
-              Powered by Gemini, Made in India with ❤
+              Made with ❤ in India.
             </p>
           </div>
         </div>
