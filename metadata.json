@@ -1,0 +1,5 @@
+{
+  "name": "Chart Pattern Analyzer",
+  "description": "A professional hub for vision-based trading pattern detection, featuring local Python scripts and web-based analysis tools.",
+  "requestFramePermissions": ["display-capture"]
+}
