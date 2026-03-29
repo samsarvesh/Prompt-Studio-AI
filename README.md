@@ -18,5 +18,7 @@ ________________________________________________________________________________
 ______________________________________________________________________________________________________________
 
 **Modern UI/UX:** A stylish, responsive interface featuring a dynamic moving background, shimmering animations, and a full Dark Mode.
+
 **One-Click Optimization:** Instantly bridges the gap between human vision and AI logic to unlock peak performance from models like ChatGPT, Claude, and Gemini. 
+
 **Tech Stack:** Built with React 18, Tailwind CSS, Framer Motion, and the Gemini API.
